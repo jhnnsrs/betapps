@@ -1,0 +1,40 @@
+deployments:
+- build_id: 6c165d19-f507-4821-862e-8ec7b3610cff
+  definitions: []
+  deployed_at: '2024-01-17T16:21:58.187990'
+  deployment_id: a32b7530-bc60-4cc8-9e10-8fcae036cadd
+  deployment_run: 9d40b75d-6ba7-489d-a592-6b2bb061efd6
+  flavour: vanilla
+  image: jhnnsrs/betapps:0.0.1-vanilla
+  manifest:
+    author: jhnnsrs
+    created_at: '2024-01-17T16:21:44.177606'
+    entrypoint: app
+    identifier: betapps
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors: []
+- build_id: 18ca728b-c97b-4ac4-b2f2-39c660b510c4
+  definitions: []
+  deployed_at: '2024-01-17T16:23:04.010137'
+  deployment_id: 692032f3-b34e-43b4-a1d0-4cdcda2f5313
+  deployment_run: 1ba0ed9e-7214-4d25-9553-46ed18496237
+  flavour: cuda
+  image: jhnnsrs/betapps:0.0.1-cuda
+  manifest:
+    author: jhnnsrs
+    created_at: '2024-01-17T16:22:54.097623'
+    entrypoint: app
+    identifier: betapps
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors:
+  - compute_capability: '3.5'
+    cuda_version: '10.2'
+    required: true
+    type: cuda
+latest_deployment_run: 31833fc6-d5b5-4064-bd58-b459f9cd5515

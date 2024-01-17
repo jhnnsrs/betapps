@@ -1,0 +1,42 @@
+builds:
+- build_id: 6c165d19-f507-4821-862e-8ec7b3610cff
+  build_run: 2b194d36-0a46-43c9-a3de-7e668a58e205
+  description: This is a vanilla flavour
+  flavour: vanilla
+  manifest:
+    author: jhnnsrs
+    entrypoint: app
+    identifier: betapps
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors: []
+- build_id: 18ca728b-c97b-4ac4-b2f2-39c660b510c4
+  build_run: fa38199c-25b5-464d-80c0-d34952d11305
+  description: This is a vanilla flavour
+  flavour: cuda
+  manifest:
+    author: jhnnsrs
+    entrypoint: app
+    identifier: betapps
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors:
+  - type: cuda
+- build_id: 2348d308-21aa-43b6-a796-1611613a32b3
+  build_run: fa38199c-25b5-464d-80c0-d34952d11305
+  description: This is a vanilla flavour
+  flavour: vanilla
+  manifest:
+    author: jhnnsrs
+    entrypoint: app
+    identifier: betapps
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors: []
+latest_build_run: fa38199c-25b5-464d-80c0-d34952d11305

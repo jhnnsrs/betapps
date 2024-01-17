@@ -1,0 +1,7 @@
+author: jhnnsrs
+entrypoint: app
+identifier: betapps
+requirements: []
+scopes:
+- read
+version: 0.0.1
