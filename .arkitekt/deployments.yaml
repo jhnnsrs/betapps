@@ -1,14 +1,94 @@
 deployments:
-- build_id: 6c165d19-f507-4821-862e-8ec7b3610cff
-  definitions: []
-  deployed_at: '2024-01-17T16:21:58.187990'
-  deployment_id: a32b7530-bc60-4cc8-9e10-8fcae036cadd
-  deployment_run: 9d40b75d-6ba7-489d-a592-6b2bb061efd6
+- build_id: 1209996e-3539-468f-bced-9ef50ebfa213
+  deployed_at: '2024-01-22T12:32:04.160136'
+  deployment_id: 6b3dfabd-091e-4bc5-8a4c-06dcde825d88
+  deployment_run: 5c819555-11a9-4acf-a912-16849af38d73
   flavour: vanilla
   image: jhnnsrs/betapps:0.0.1-vanilla
+  inspection:
+    definitions:
+    - args:
+      - annotations: []
+        default: 10
+        description: The number of iterations, by default 10
+        key: n
+        kind: INT
+        label: n
+        nullable: true
+        scope: GLOBAL
+      - annotations: []
+        default: 2
+        description: The timeout, by default 2
+        key: timeout
+        kind: INT
+        label: timeout
+        nullable: true
+        scope: GLOBAL
+      collections:
+      - featured
+      description: This function generates {{n}} strings with a {{timeout}} ms timeout
+        between each string
+      interfaces: []
+      kind: GENERATOR
+      name: Generate N Strings
+      port_groups: []
+      returns:
+      - annotations: []
+        description: A string with Hello {n}
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    - args:
+      - annotations: []
+        description: The input string
+        key: hello
+        kind: STRING
+        label: hello
+        nullable: false
+        scope: GLOBAL
+      collections: []
+      description: This function appends world to the input string
+      interfaces: []
+      kind: FUNCTION
+      name: Append World
+      port_groups: []
+      returns:
+      - annotations: []
+        description: '{{hello}} World'
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    - args:
+      - annotations: []
+        description: 'The input string
+
+
+          Returns'
+        key: input
+        kind: STRING
+        label: input
+        nullable: false
+        scope: GLOBAL
+      collections: []
+      description: 'This function prints the input string to
+
+        the console'
+      interfaces: []
+      kind: FUNCTION
+      name: Print String
+      port_groups: []
+      returns:
+      - annotations: []
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    size: 606433313
   manifest:
     author: jhnnsrs
-    created_at: '2024-01-17T16:21:44.177606'
+    created_at: '2024-01-22T12:28:52.980523'
     entrypoint: app
     identifier: betapps
     requirements: []
@@ -16,25 +96,4 @@ deployments:
     - read
     version: 0.0.1
   selectors: []
-- build_id: 18ca728b-c97b-4ac4-b2f2-39c660b510c4
-  definitions: []
-  deployed_at: '2024-01-17T16:23:04.010137'
-  deployment_id: 692032f3-b34e-43b4-a1d0-4cdcda2f5313
-  deployment_run: 1ba0ed9e-7214-4d25-9553-46ed18496237
-  flavour: cuda
-  image: jhnnsrs/betapps:0.0.1-cuda
-  manifest:
-    author: jhnnsrs
-    created_at: '2024-01-17T16:22:54.097623'
-    entrypoint: app
-    identifier: betapps
-    requirements: []
-    scopes:
-    - read
-    version: 0.0.1
-  selectors:
-  - compute_capability: '3.5'
-    cuda_version: '10.2'
-    required: true
-    type: cuda
-latest_deployment_run: 31833fc6-d5b5-4064-bd58-b459f9cd5515
+latest_deployment_run: f0a77761-af1a-4cf6-bcf0-0849f6fa645d

@@ -1,6 +1,6 @@
 FROM python:3.8-slim-buster
 
-RUN pip install arkitekt[all]
+RUN pip install "arkitekt[all]>=0.7.0a5"
 
 RUN mkdir /app
 WORKDIR /app

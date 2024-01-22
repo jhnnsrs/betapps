@@ -2,7 +2,7 @@ from arkitekt import register
 import time
 
 
-@register
+@register(collections=["featured"])
 def generate_n_string(n: int = 10, timeout: int = 2) -> str:
     """Generate N Strings
 
